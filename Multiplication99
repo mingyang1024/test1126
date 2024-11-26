@@ -1,0 +1,27 @@
+ // 这是一个csharp文件
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // 输出99乘法表
+        PrintMultiplicationTable(9);
+    }
+
+    /// <summary>
+    /// 打印指定范围内的乘法表
+    /// </summary>
+    /// <param name="maxNumber">乘法表的最大数字</param>
+    static void PrintMultiplicationTable(int maxNumber)
+    {
+        for (int i = 1; i <= maxNumber; i++)
+        {
+            for (int j = 1; j <= i; j++)
+            {
+                Console.Write($"{j} * {i} = {i * j}\t");
+            }
+            Console.WriteLine();
+        }
+    }
+}
